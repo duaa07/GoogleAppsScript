@@ -1,0 +1,20 @@
+// a time-based trigger was added on this script to run every 30 mins
+// the goal was to forward certain emails that i couldn't apply a filter on to be forwarded to one recipient 
+// and i couldn't add a filter to keep someone in cc or bcc in all my emails so this was an easier way to do the required
+
+function autoForward() {
+  var recipient = 'usr@domain.com'; 
+  var threads = GmailApp.search('label:sent-forwarded'); //search gmail and get the threads in the Label that will have the emails to be forwarded
+  var myLabel = GmailApp.getUserLabelByName('Sent Label 2 Back'); //where emails will be moved to know that they were forwarded
+  var myLabel2 = GmailApp.getUserLabelByName('Sent Forwarded');
+  for (var i = 0; i < threads.length; i++) { // loop the threads
+    var thisThread = threads[i];    
+    var messages = thisThread.getMessages();
+    var messageCount = thisThread.getMessageCount(); 
+    var lastMessage = messages[messageCount-1].forward(recipient);  // get last email in the thread and forward to the recipient
+    
+    thisThread.addLabel(myLabel); // move to label2
+    thisThread.removeLabel(myLabel2); // remove from label 1
+      
+  }
+}
