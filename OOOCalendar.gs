@@ -1,5 +1,5 @@
 // Change this to your calendar ID (should look like an email address)
-const CALENDAR_ID = 'googleemailcal@google.com';
+const CALENDAR_ID = 'duaa@duaa.com';
 
 // Change these to your own message and subject
 const VACATION_MESSAGE = 'I am currently out of office.';
@@ -21,14 +21,15 @@ function setVacationResponseToOOO() {
   }).items;
     
   const isOOO = events.some(event => {
-    return event.summary.includes('Out of Office');
+    return event.summary.includes('Out of Office')|| event.eventType==="outOfOffice";
   });
 
   // Set the vacation responder if we are out of office
   if (isOOO) {
+   // const currentSettings = Gmail.Users.Settings.getVacation({ userId: 'duaa@duaa.com' });
     const updatedSettings = {
       responseSubject: 'Out Of Office',
-      responseBodyHtml: 'Hello,<br>\n\nThank you for your email.<br>\n\nI’m on a leave.<br>\n\nIf you need immediate assistance during my absence, please contact Duaa Otherwise I will respond to your emails upon my return.<br>\n\nHave a nice day.',
+      responseBodyHtml: 'Hello,<br><br>\n\nThank you for your email.<br><br>\n\nI’m on a leave.<br><br>\n\nIf you need immediate assistance during my absence, please Contact SOMEONE ELSE ! :D.\n\n<br><br>Otherwise I will respond to your emails upon my return.<br><br>\n\nHave a nice day.',
       enableAutoReply: true
     };
     Gmail.Users.Settings.updateVacation(updatedSettings, 'me');
