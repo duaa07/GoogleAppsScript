@@ -1,35 +1,18 @@
-Google Chat Workspace Updates Bot
-Publishing Automated Google Workspace Blog Updates into Google Chat with Apps Script and Webhooks
-Introduction
-As a member of a Google Workspace Chat Group ( GAM for Google Workspace ), I noticed the addition of a bot and became curious about its functionality. I searched for an existing addon or app that could provide similar features but couldn't find one. This led me to the idea of developing my own humble bot, inspired by the existing one. While I acknowledge that there may be other solutions out there, I decided to embark on the journey of creating my own bot as a personal endeavor.
-Objective
-Enhance your knowledge of Google Workspace Updates. By leveraging the power of Apps Script and Webhooks, I have created a seamless integration that automatically publishes new blog/feed posts from the Google Workspace Updates Blog to a dedicated Google Chat Space. This means you can effortlessly stay informed about the latest features, enhancements, and announcements related to Google Workspace. With real-time notifications delivered directly to the Chat Space, you'll never miss a beat. Stay ahead of the curve and maximize your productivity with this convenient and efficient way of staying informed.
-the same script can be customized to publish other RSS Feeds however I've only tested and deployed with GWS Updates Blog Feed.
-Setup
-The usage of this Bot/App is straightforward and simple. It involves a single Apps Script project and file. To get started, you will need to manually Create the Script, Copy/Paste the code, Change the Chat Room URL (chatWebhookUrl), and then set up a webhook in Google Chat or any other configured channel.
- The script will then be triggered automatically at specified intervals (X hours) to perform its designated tasks, you'll also have to create this Time-based trigger on the script.
-you can find the Script URL here. 
-Step 1: Register the incoming webhook
-In a web browser, open Google Chat.
-Go to the space to which you want to add a webhook.
-At the top, next to the space title, click Down Arrow arrow_drop_down > Apps & integrations.
+Google Chat Workspace Updates Bot
+Automated Google Workspace Blog Updates in Google Chat
 
-Click Manage webhooks.
-If this space already has other webhooks, click Add Another. Otherwise, skip this step.
-For Name, enter "Google Workspace Updates".
-For Avatar URL,  enter https://anylogourl select any online logo to be used.
+Introduction:
+As a member of a Google Workspace Chat Group (GAM for Google Workspace), I noticed the introduction of a bot and became intrigued by its functionality. Unable to find an existing addon or app with similar features, I decided to develop my own bot, inspired by the existing one. While acknowledging the existence of other solutions, I embarked on this personal endeavor.
 
-Copy the URL
-URL CopyClick SAVE.
-To copy the full webhook URL, click content_copy Copy.
-Click outside the box to close the Incoming webhooks dialog.
+Objective:
+Expand your knowledge of Google Workspace Updates. Through the power of Apps Script and Webhooks, I have created a seamless integration that automatically publishes new blog/feed posts from the Google Workspace Updates Blog to a dedicated Google Chat Space. Stay informed about the latest features, enhancements, and announcements related to Google Workspace with real-time notifications delivered directly to your Chat Space. Stay ahead of the curve and maximize your productivity with this convenient and efficient way of staying informed.
 
-Step 2: Create an Apps script 
-Create a new Apps script on Create an Apps script
-For the first time, you'd need to manually Run the script to authorize and test it is working.
-To ensure the script runs at the desired time, you can add a time-based trigger to execute the main function. For example, you can set the trigger to activate at 11 PM. This configuration ensures that the script will only post the newly published posts from the same date, one day at a time. By incorporating this time-based trigger, the script will effectively handle the posting of relevant content within the specified timeframe, and shall not post any duplicate messages.
+Setup:
+Using this Bot/App is simple. It involves a single Apps Script project and file. Start by manually creating the script, copying and pasting the code, changing the Chat Room URL (chatWebhookUrl), and setting up a webhook in Google Chat or any other configured channel. The script will be triggered automatically at specified intervals (X hours) to perform its designated tasks. Remember to create a time-based trigger for the script.
 
-Conclusion
-In conclusion, developing a custom Google Chat bot/app using Apps Script and webhooks can greatly enhance your experience in staying updated with the latest posts from the Google Workspace Updates Blog. By automating the process of retrieving and sharing new content in real time, you can save time and ensure that important updates are readily available to your team or community. With the flexibility and power of Apps Script, the possibilities for creating your own custom integrations are virtually limitless. So why not embark on your own journey of exploration and customization? Give it a try, and who knows, you might just create a bot/app that becomes an invaluable tool for yourself and others. Happy coding!
+Conclusion:
+By developing a custom Google Chat bot/app using Apps Script and webhooks, you can greatly enhance your experience of staying updated with the latest posts from the Google Workspace Updates Blog. Automating the process of retrieving and sharing new content in real-time saves time and ensures important updates are readily available to your team or community. Explore the possibilities of Apps Script for creating your own custom integrations. Start your coding journey and create!
+
 Please feel free to share any comments or inquiries you may have. I am here to assist you and address any concerns or queries you may have.
+
 P.S. You can't publish webhooks on the Google Workspace Marketplace. Webhooks aren't conversational. They can't respond to or receive messages from users or events from Google Chat. Incoming webhooks work in direct messages, but only when all users have Chat apps enabled.
