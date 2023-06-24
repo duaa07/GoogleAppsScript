@@ -1,29 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-    h1 {
-      color: #4285F4;
-      margin-bottom: 10px;
-    }
-    h2 {
-      color: #4285F4;
-      margin-bottom: 5px;
-    }
-    p {
-      margin-bottom: 15px;
-    }
-    span.title {
-      color: blue;
-      font-weight: bold;
-    }
-    span.subtitle {
-      color: blue;
-    }
-  </style>
+
 </head>
 <body>
   <h1>Google Chat Workspace Updates Bot</h1>
