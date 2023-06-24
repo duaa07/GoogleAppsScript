@@ -1,4 +1,4 @@
-<span style="color:blue"><b>Google Chat Workspace Updates Bot</b></span>
+<span style="color:blue"><b>Google Chat Workspace Updates Bot</b></span></br>
 <span style="color:blue">Automated Google Workspace Blog Updates in Google Chat</span>
 
 **Introduction:**
