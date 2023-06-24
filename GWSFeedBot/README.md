@@ -6,6 +6,7 @@
 <body>
   <h1>Google Chat Workspace Updates Bot</h1>
   <p class="subtitle">Automated Google Workspace Blog Updates in Google Chat</p>
+  <a href="https://medium.com/@duaa.al/google-chat-workspace-updates-bot-5eed69778882">Medium Article Link</a>
 
   <h2>Introduction:</h2>
   <p>As a member of a Google Workspace Chat Group (GAM for Google Workspace), I noticed the introduction of a bot and became intrigued by its functionality. Unable to find an existing addon or app with similar features, I decided to develop my own bot, inspired by the existing one. While acknowledging the existence of other solutions, I embarked on this personal endeavor.</p>
