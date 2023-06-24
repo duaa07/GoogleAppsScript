@@ -1,18 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-    h2 {
-      color: #4285F4;
-    }
-    p {
-      margin-bottom: 20px;
-    }
-  </style>
-</head>
 <body>
   <h2>Automated Email Forwarding Script</h2>
   <p>The script is designed to run automatically every 30 minutes using a time-based trigger. Its purpose is to forward certain emails that couldn't be filtered and keep specific recipients in CC or BCC in all emails.</p>
